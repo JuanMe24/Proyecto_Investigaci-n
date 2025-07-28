@@ -53,12 +53,12 @@ A continuación se muestran las 6 poses del robot junto con sus valores articula
 
 | Pose | Imagen | Valores RAW | poses del baile |
 |------|--------|-------------| --------------- |
-| Pose 1 | <img src="Fotos/pose1.jpg" width="250"/> | `[512, 512, 800, 512, 512]` | palmas hacia abajo |
-| Pose 2 | <img src="Fotos/pose2.jpg" width="250"/> | `[512, 512, 800, 512, 0]` | Palmas hacia arriba | 
-| Pose 3 | <img src="Fotos/pose3.jpg" width="250"/> | `[300, 300, 800, 250, 512]` | Palmas al hombro contrario | 
-| Pose 4 | <img src="Fotos/pose4.jpg" width="250"/> | `[512, 690, 240, 512, 512]` | Palmas a la cabeza | 
-| Pose 5 | <img src="Fotos/pose5.jpg" width="250"/> | `[700, 512, 900, 800, 512]` | Palmas a la parte contraria de la cadera |
-| Pose 6 | <img src="Fotos/pose6.jpg" width="250"/> | `[512, 512, 900, 700, 512]` | Palmas a la parte correspondiente de la cadera |
+| Pose 1 | <img src="Fotos/pose1.jpg" width="230"/> | `[512, 512, 800, 512, 512]` | palmas hacia abajo |
+| Pose 2 | <img src="Fotos/pose2.jpg" width="230"/> | `[512, 512, 800, 512, 0]` | Palmas hacia arriba | 
+| Pose 3 | <img src="Fotos/pose3.jpg" width="230"/> | `[300, 300, 800, 250, 512]` | Palmas al hombro contrario | 
+| Pose 4 | <img src="Fotos/pose4.jpg" width="230"/> | `[512, 690, 240, 512, 512]` | Palmas a la cabeza | 
+| Pose 5 | <img src="Fotos/pose5.jpg" width="230"/> | `[700, 512, 900, 800, 512]` | Palmas a la parte contraria de la cadera |
+| Pose 6 | <img src="Fotos/pose6.jpg" width="230"/> | `[512, 512, 900, 700, 512]` | Palmas a la parte correspondiente de la cadera |
 
 
 
@@ -68,7 +68,8 @@ A continuación se muestran las 6 poses del robot junto con sus valores articula
 
 Todo el código está implementado en Python, con módulos comentados para:
 
-- Comunicación serial con los robots (USB), sin embargo, en este punto se evidenció que, justamente, el segundo robot proporcionado no ejecuta los programas. Se verificó que los puertos utilizados tuvieran habilitado el grupo dialout.
+- Comunicación serial con los robots (USB) con ayuda de el archivo [`id_dynamixel.py`](codigo/id_dynamixel.py) contiene la lógica principal de la interfaz gráfica y el control de movimientos del robot.
+ sin embargo, en este punto se evidenció que, justamente, el segundo robot proporcionado no ejecuta los programas. Se verificó que los puertos utilizados tuvieran habilitado el grupo dialout.
 - Representación del modelo cinemático con `roboticstoolbox`
 - Interfaz gráfica en `Tkinter` con selección de poses y control de rutina
 - Ejecución sincronizada y simulada de 2 robots (1 físico + 1 simulado)
