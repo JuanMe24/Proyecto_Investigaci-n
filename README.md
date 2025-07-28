@@ -68,9 +68,13 @@ A continuación se muestran las 6 poses del robot junto con sus valores articula
 
 Todo el código está implementado en Python, con módulos comentados para:
 
-- Comunicación serial con los robots (USB) con ayuda de el archivo [`id_dynamixel.py`](codigo/id_dynamixel.py) contiene la lógica principal de la interfaz gráfica y el control de movimientos del robot.
- sin embargo, en este punto se evidenció que, justamente, el segundo robot proporcionado no ejecuta los programas. Se verificó que los puertos utilizados tuvieran habilitado el grupo dialout.
-- Representación del modelo cinemático con `roboticstoolbox`
+- Comunicación serial con los robots (USB) con ayuda de el archivo [`id_dynamixel.py`](codigo/id_dynamixel.py) sin embargo, en este punto se evidenció que, justamente, el segundo robot proporcionado no ejecuta los programas. Se verificó que los puertos utilizados tuvieran habilitado el grupo dialout.
+- La imagen que se muestra a continuación fue generada mediante la ejecución del script `pentando.py`, el cual permite enviar una posición angular específica a los servos Dynamixel del robot Phantom X Pincher. En este caso, la pose corresponde a los ángulos `[x°, x°, x°, x°]` para las articulaciones de la base, hombro, codo y muñeca respectivamente. Además de ejecutar físicamente esta pose en el robot real, el script utiliza el modelo cinemático definido en `phantom_dh.py` y la librería `roboticstoolbox` para graficar la configuración del manipulador en pantalla. Esta visualización facilita la validación de la pose deseada antes de realizar la ejecución completa de la coreografía.
+
+<div align="center">
+  <img src="Fotos/pose_simulado.jpg" width="350"/>
+</div>
+
 - Interfaz gráfica en `Tkinter` con selección de poses y control de rutina
 - Ejecución sincronizada y simulada de 2 robots (1 físico + 1 simulado)
 
