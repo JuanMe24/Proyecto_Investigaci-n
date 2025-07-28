@@ -301,6 +301,10 @@ if __name__ == '__main__':
 
 ## 🎥 Video Presentación
 
+La coreografía fue diseñada para ajustarse al ritmo de la canción "Macarena", cuya secuencia específica de baile tiene una duración aproximada de 9 segundos. Sin embargo, al evaluar las capacidades reales del robot Phantom X Pincher, se determinó que ejecutar las seis poses de forma segura y fluida en ese intervalo requería velocidades articulares excesivamente altas, lo cual podría comprometer la precisión, la estabilidad y la vida útil de los servos Dynamixel.
+
+Por esta razón, se optó por duplicar el tiempo de ejecución de la rutina a 18 segundos, permitiendo que el robot alcance correctamente cada una de las poses con movimientos suaves y mecánicamente seguros. Para mantener la sincronización con la música y respetar el ritmo coreográfico original, los videos generados fueron acelerados a velocidad 2× (x2) durante la edición final.
+
 (aca va el video de la demostración) 
 
 
