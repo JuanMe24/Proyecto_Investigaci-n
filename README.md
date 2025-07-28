@@ -75,18 +75,19 @@ Todo el código está implementado en Python, con módulos comentados para:
   <img src="Fotos/pose_simulado.jpg" width="350"/>
 </div>
 
-- Interfaz gráfica en `Tkinter` con selección de poses y control de rutina
+- La siguiente imagen muestra la interfaz gráfica desarrollada con la biblioteca `Tkinter` en Python, incluida en el archivo `hmi_coreografia.py`. Esta interfaz permite al usuario controlar de manera intuitiva la ejecución de poses individuales y rutinas completas en el robot Phantom X Pincher. La sección izquierda ("Seleccionar Pose") contiene botones que invocan el método `self.ejecutar_pose_individual(i)` definido en el código, el cual utiliza la función `enviar_pose()` para enviar posiciones individuales a los motores Dynamixel.
+
+- Debajo, se encuentra el botón naranja “Macarena (Ambos Robots)”, el cual ejecuta la rutina sincronizada de ambos robots mediante el método `self.macarena_rutina()`, iterando sobre las listas `poses` y `poses_robot2`. También se incluye un botón adicional que permite ejecutar la rutina del segundo robot en el robot físico (`self.ejecutar_rutina_robot2()`). Esto por la limitación en la cantidad de robots funcionales, para no estar comentando constantemente las lineas de codigo, ni cambiando los puertos. 
+
+- En la parte inferior, se presenta una barra de progreso (`ttk.Progressbar`) que se actualiza en tiempo real con `self.barra["value"] = progreso`, junto con una etiqueta que muestra el tiempo restante por medio de `self.label_tiempo.config(...)`.
+
+- La sección derecha (“Control de Robots”) permite observar el estado actual de cada robot. Por ejemplo, cuando el Robot 1 está en ejecución, el color de fondo cambia a azul con `self.estado_r1.config(bg="blue")`, y vuelve a verde al terminar.
+
+<div align="center">
+  <img src="Fotos/interfaz.png" width="500"/>
+</div>
+
 - Ejecución sincronizada y simulada de 2 robots (1 físico + 1 simulado)
-
----
-
-## 🔍 Comparación y Validación
-
-Se incluye una discusión técnica entre el modelo simulado (mediante toolbox) y la ejecución real en los robots, evaluando:
-
-- Posición esperada vs. real
-- Precisión de los movimientos
-- Sincronización entre brazos
 
 ---
 
