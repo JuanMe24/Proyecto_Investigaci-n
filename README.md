@@ -310,6 +310,6 @@ La coreografía fue diseñada para ajustarse al ritmo de la canción "Macarena",
 
 Por esta razón, se optó por duplicar el tiempo de ejecución de la rutina a 18 segundos, permitiendo que el robot alcance correctamente cada una de las poses con movimientos suaves y mecánicamente seguros. Para mantener la sincronización con la música y respetar el ritmo coreográfico original, los videos generados fueron acelerados a velocidad 2× (x2) durante la edición final.
 
-Pd: baila tu cuerpo energia macarena
+Pd: baila tu cuerpo energía macarena. 
 
 
