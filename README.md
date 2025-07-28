@@ -17,6 +17,24 @@ El objetivo es sincronizar dos brazos robóticos para ejecutar una secuencia cor
 
 ## 📂 Estructura del Repositorio
 
+```
+Proyecto_Investigaci-o/
+├── Fotos/ # Imágenes de las 6 poses del robot
+│ ├── pose1.jpg
+│ ├── pose2.jpg
+│ ├── pose3.jpg
+│ ├── pose4.jpg
+│ ├── pose5.jpg
+│ └── pose6.jpg
+├── codigo/ # Código fuente en Python (control e interfaz)
+│ ├── hmi_coreografia.py
+│ └── id_dynamixel.py
+├── videos/ # Video demostrativo e interfaz gráfica
+│ ├── demostración.mp4
+│ └── interfaz.webm
+└── README.md # Documentación principal del proyecto
+```
+
 
 ---
 
@@ -24,10 +42,24 @@ El objetivo es sincronizar dos brazos robóticos para ejecutar una secuencia cor
 
 Se incluye un diagrama visual que describe el flujo de acciones de los robots, incluyendo activación, selección de poses, sincronización de rutina y visualización.
 
+<div align="center">
+  <img src="Fotos/flujo.svg" width="700"/>
+</div>
 
-## 🗺️ Plano y Coreografía
 
-Incluye el diseño del plano de planta y la descripción detallada de la coreografía, indicando los movimientos de cada brazo, su colaboración y tiempos de ejecución sincronizados.
+## 🤖 Poses de la Coreografía (Miniaturas)
+
+A continuación se muestran las 6 poses del robot junto con sus valores articulares (RAW):
+
+| Pose | Imagen | Valores RAW | poses del baile |
+|------|--------|-------------| --------------- |
+| Pose 1 | <img src="Fotos/pose1.jpg" width="250"/> | `[512, 512, 800, 512, 512]` | palmas hacia abajo |
+| Pose 2 | <img src="Fotos/pose2.jpg" width="250"/> | `[512, 512, 800, 512, 0]` | Palmas hacia arriba | 
+| Pose 3 | <img src="Fotos/pose3.jpg" width="250"/> | `[300, 300, 800, 250, 512]` | Palmas al hombro contrario | 
+| Pose 4 | <img src="Fotos/pose4.jpg" width="250"/> | `[512, 690, 240, 512, 512]` | Palmas a la cabeza | 
+| Pose 5 | <img src="Fotos/pose5.jpg" width="250"/> | `[700, 512, 900, 800, 512]` | Palmas a la parte contraria de la cadera |
+| Pose 6 | <img src="Fotos/pose6.jpg" width="250"/> | `[512, 512, 900, 700, 512]` | Palmas a la parte correspondiente de la cadera |
+
 
 
 ---
