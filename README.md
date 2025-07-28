@@ -49,7 +49,7 @@ Se incluye un diagrama visual que describe el flujo de acciones de los robots, i
 
 ## 🤖 Poses de la Coreografía (Miniaturas)
 
-A continuación se muestran las 6 poses del robot junto con sus valores articulares (RAW):
+A continuación se muestran las 6 poses del robot junto con sus valores articulares (RAW), vistas desde una vista superior. Además, para simular el salto en baile para cambiar la orientación, tendríamos que sumar 90 grados a cada una de las primeras coordenadas. Para el brazo izquierdo, se cambia la rotación de la primera articulación, para así simular que el codo está hacia el otro lado. En el código se puede apreciar.
 
 | Pose | Imagen | Valores RAW | poses del baile |
 |------|--------|-------------| --------------- |
@@ -68,8 +68,7 @@ A continuación se muestran las 6 poses del robot junto con sus valores articula
 
 Todo el código está implementado en Python, con módulos comentados para:
 
-- Control individual de servos Dynamixel
-- Comunicación serial con los robots (USB)
+- Comunicación serial con los robots (USB), sin embargo, en este punto se evidenció que, justamente, el segundo robot proporcionado no ejecuta los programas. Se verificó que los puertos utilizados tuvieran habilitado el grupo dialout.
 - Representación del modelo cinemático con `roboticstoolbox`
 - Interfaz gráfica en `Tkinter` con selección de poses y control de rutina
 - Ejecución sincronizada y simulada de 2 robots (1 físico + 1 simulado)
