@@ -299,7 +299,7 @@ if __name__ == '__main__':
 
 ---
 
-## Video: Rutina de movimiento - Robot Pincher con la Macarena 
+## 📹🎉 Video: Rutina de movimiento - Robot Pincher con la Macarena 
 
 A continuación, se presenta una rutina coreografiada utilizando el manipulador PhantomX Pincher con servomotores Dynamixel AX-12A. La secuencia de movimientos sigue el ritmo de la canción *La Macarena*, como ejercicio de control y sincronización articulada.
 
