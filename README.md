@@ -1,4 +1,4 @@
-# Proyecto_ de Investigacion
+# Proyecto de Investigacion
 
 **Coreografía programada de robots Phantom X Pincher**  
 Facultad de Ingeniería – Universidad Nacional de Colombia  
@@ -303,8 +303,8 @@ if __name__ == '__main__':
 
 A continuación, se presenta una rutina coreografiada utilizando el manipulador PhantomX Pincher con servomotores Dynamixel AX-12A. La secuencia de movimientos sigue el ritmo de la canción *La Macarena*, como ejercicio de control y sincronización articulada.
 
-**Ver en YouTube**: [https://www.youtube.com/watch?v=GsCZH99Z7uI](https://www.youtube.com/watch?v=GsCZH99Z7uI)
-**Copia de seguridad en Google Drive**: [https://drive.google.com/file/d/1xESCWI_WthIRBt95vwF4vAychM-8TjCW/view?usp=sharing](https://drive.google.com/file/d/1xESCWI_WthIRBt95vwF4vAychM-8TjCW/view?usp=sharing)
+- **Ver en YouTube**: [https://www.youtube.com/watch?v=GsCZH99Z7uI](https://www.youtube.com/watch?v=GsCZH99Z7uI)
+- **Copia de seguridad en Google Drive**: [https://drive.google.com/file/d/1xESCWI_WthIRBt95vwF4vAychM-8TjCW/view?usp=sharing](https://drive.google.com/file/d/1xESCWI_WthIRBt95vwF4vAychM-8TjCW/view?usp=sharing)
 
 La coreografía fue diseñada para ajustarse al ritmo de la canción "Macarena", cuya secuencia específica de baile tiene una duración aproximada de 9 segundos. Sin embargo, al evaluar las capacidades reales del robot Phantom X Pincher, se determinó que ejecutar las seis poses de forma segura y fluida en ese intervalo requería velocidades articulares excesivamente altas, lo cual podría comprometer la precisión, la estabilidad y la vida útil de los servos Dynamixel.
 
