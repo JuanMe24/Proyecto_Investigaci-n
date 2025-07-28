@@ -87,11 +87,11 @@ Todo el código está implementado en Python, con módulos comentados para:
   <img src="Fotos/interfaz.png" width="500"/>
 </div>
 
-- Ejecución sincronizada y simulada de 2 robots (1 físico + 1 simulado)
-
 ---
 
 ## 🎥 Video Presentación
+
+(aca va el video de la demostración) 
 
 
 ## ⚙️ Requisitos
