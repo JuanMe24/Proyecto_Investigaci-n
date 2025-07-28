@@ -60,6 +60,15 @@ A continuación se muestran las 6 poses del robot junto con sus valores articula
 | Pose 5 | <img src="Fotos/pose5.jpg" width="230"/> | `[700, 512, 900, 800, 512]` | Palmas a la parte contraria de la cadera |
 | Pose 6 | <img src="Fotos/pose6.jpg" width="230"/> | `[512, 512, 900, 700, 512]` | Palmas a la parte correspondiente de la cadera |
 
+## 📐 Plano de planta y descripción de coreografía
+
+Las imágenes incluidas en la carpeta `Fotos/` representan la vista cenital (superior) del robot Phantom X Pincher en cada una de las 6 poses utilizadas en la coreografía.
+
+Cada imagen corresponde a una configuración específica de los motores, tal como se describe en la tabla de poses implementada en el script `hmi_coreografia.py`.
+
+Estas posiciones fueron cuidadosamente seleccionadas para asegurar fluidez en la coreografía, evitando colisiones y respetando los límites articulares.
+
+Las imágenes cumplen la función de vista en planta, mostrando la progresión espacial de la coreografía desde un ángulo superior.
 
 
 ---
